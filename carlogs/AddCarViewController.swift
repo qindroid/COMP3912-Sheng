@@ -330,7 +330,7 @@ class AddCarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(contentStack)
-        view.backgroundColor = UIColor(hexString: "#ffffff")
+        view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
         NSLayoutConstraint.activate([
             contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
