@@ -81,7 +81,7 @@ class WelcomeViewController: UIViewController {
         let button = BaseUIButton()
         button.setTitle("LOGIN", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.backgroundColor = UIColor(hexString: "#58CFC2")
+        button.backgroundColor = UIColor(hexString: "#504487")
         button.layer.cornerRadius = 10
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
@@ -191,5 +191,8 @@ class WelcomeViewController: UIViewController {
     @objc func loginTapped() {
         let profileViewController = ProfileViewController()
         self.navigationController?.pushViewController(profileViewController, animated: true)
+        let vc = TabBarViewController()
+        AppRouter.navigate(to: vc)
     }
+
 }

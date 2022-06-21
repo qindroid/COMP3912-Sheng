@@ -19,8 +19,8 @@ class TabBarViewController: UITabBarController {
         let logVC = LogViewController()
         logVC.tabBarItem = UITabBarItem(title: "Log", image: UIImage(named: "log"), tag: 1)
         
-        let friendsVC = FriendsViewController()
-        friendsVC.tabBarItem = UITabBarItem(title: "Summary", image: UIImage(named: "summary"), tag: 1)
+        let summaryVC = SummaryViewController()
+        summaryVC.tabBarItem = UITabBarItem(title: "Summary", image: UIImage(named: "summary"), tag: 1)
         
         let shareVC = ShareViewController()
         shareVC.tabBarItem = UITabBarItem(title: "Share", image: UIImage(named: "share"), tag: 1)
@@ -29,7 +29,7 @@ class TabBarViewController: UITabBarController {
 		tabBar.backgroundColor = UIColor(hexString: "#F9F9F9")
 		tabBar.tintColor = UIColor(hexString: "#58CFC2")
 		
-		viewControllers = [profileVC, logVC, friendsVC, shareVC]
+		viewControllers = [profileVC, logVC, summaryVC, shareVC]
 	}
 	
 }

@@ -13,15 +13,13 @@ class FriendsViewController: UITableViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(true)
-		self.parent?.title = "Friend"
+		self.parent?.title = "Brand"
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
-//		title = "Friends"
-		view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.white
 		
 		tableView.register(FriendCell.self, forCellReuseIdentifier: "cell")
 	}
@@ -49,12 +47,7 @@ class FriendsViewController: UITableViewController {
 			age: cellData.age,
 			location: cellData.location,
 			image: cellData.image
-		)
-		
-//		cell.nickNameLabel.text = cellData.nickName
-//		cell.locationLabel.text = cellData.location
-//		cell.ageLabel.text = cellData.age
-//		cell.avatarView.image = cellData.image
+		)	
 
 		return cell
 	}
@@ -66,12 +59,14 @@ class FriendsViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let cellData = data[indexPath.section].1[indexPath.row]
 		
-		let alertViewController = UIAlertController(title: cellData.nickName, message: "You select this person", preferredStyle: .alert)
-		let action = UIAlertAction(title: "Close", style: .cancel) { action in
-			print("completion happened")
-		}
-		alertViewController.addAction(action)
-		self.navigationController?.present(alertViewController, animated: true, completion: nil)
+//		let alertViewController = UIAlertController(title: cellData.nickName, message: "You select this brand", preferredStyle: .alert)
+//		let action = UIAlertAction(title: "Close", style: .cancel) { action in
+//			print("completion happened")
+//		}
+//		alertViewController.addAction(action)
+//		self.navigationController?.present(alertViewController, animated: true, completion: nil)
+        let addCarViewController = AddCarViewController()
+        self.navigationController?.popViewController(animated: true)
 	}
 	
 }

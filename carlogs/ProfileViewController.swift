@@ -13,10 +13,10 @@ class ProfileViewController: UIViewController {
 		let button = BaseUIButton()
 		button.setTitle("Add car", for: .normal)
 		button.addTarget(self, action: #selector(friendsTapped), for: .touchUpInside)
-		button.backgroundColor = UIColor(hexString: "#58CFC2")
+		button.backgroundColor = UIColor(hexString: "#504487")
 		button.heightAnchor.constraint(equalToConstant: 50).isActive = true
 		button.widthAnchor.constraint(equalToConstant: 200).isActive = true
-		button.layer.cornerRadius = 25
+		button.layer.cornerRadius = 10
 		return button
 	}()
 	
@@ -24,10 +24,10 @@ class ProfileViewController: UIViewController {
 		let button = BaseUIButton()
 		button.setTitle("Logout", for: .normal)
 		button.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
-		button.backgroundColor = UIColor(hexString: "#58CFC2")
+		button.backgroundColor = UIColor(hexString: "#504487")
 		button.heightAnchor.constraint(equalToConstant: 50).isActive = true
 		button.widthAnchor.constraint(equalToConstant: 200).isActive = true
-		button.layer.cornerRadius = 25
+		button.layer.cornerRadius = 10
 		return button
 	}()
 	
@@ -48,11 +48,8 @@ class ProfileViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 		view.backgroundColor = UIColor.white
-		
 		view.addSubview(contentStack)
-		
 		NSLayoutConstraint.activate([
 			contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 			contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -60,8 +57,8 @@ class ProfileViewController: UIViewController {
 	}
 	
 	@objc func friendsTapped() {
-		let friendsVC = FriendsViewController()
-		self.navigationController?.pushViewController(friendsVC, animated: true)
+		let addCarVC = AddCarViewController()
+		self.navigationController?.pushViewController(addCarVC, animated: true)
 	}
 	
 	@objc func logoutTapped() {

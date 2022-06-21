@@ -26,12 +26,15 @@
 		292363C2285DB2FA00277453 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C1285DB2FA00277453 /* TabBarViewController.swift */; };
 		292363C4285DB33A00277453 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C3285DB33A00277453 /* AppRouter.swift */; };
 		292363C6285DB3E000277453 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C5285DB3E000277453 /* ProfileViewController.swift */; };
-		292363C8285DB3E800277453 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C7285DB3E800277453 /* FriendsViewController.swift */; };
-		292363CA285DB44700277453 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C9285DB44700277453 /* FriendCell.swift */; };
+		292363C8285DB3E800277453 /* BrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C7285DB3E800277453 /* BrandsViewController.swift */; };
+		292363CA285DB44700277453 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363C9285DB44700277453 /* CarCell.swift */; };
 		292363CC285DB45600277453 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363CB285DB45600277453 /* DataProvider.swift */; };
 		292363CE285DB47C00277453 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363CD285DB47C00277453 /* User.swift */; };
 		292363D0285DD2B900277453 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363CF285DD2B900277453 /* LogViewController.swift */; };
 		292363D2285DD35800277453 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D1285DD35800277453 /* ShareViewController.swift */; };
+		292363D4285E41AD00277453 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D3285E41AD00277453 /* SummaryViewController.swift */; };
+		292363D628618DDF00277453 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D528618DDF00277453 /* AddCarViewController.swift */; };
+		292363D82861910C00277453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D72861910C00277453 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +59,15 @@
 		292363C1285DB2FA00277453 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		292363C3285DB33A00277453 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		292363C5285DB3E000277453 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		292363C7285DB3E800277453 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		292363C9285DB44700277453 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendCell.swift; path = carlogs/FriendCell.swift; sourceTree = SOURCE_ROOT; };
+		292363C7285DB3E800277453 /* BrandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandsViewController.swift; sourceTree = "<group>"; };
+		292363C9285DB44700277453 /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarCell.swift; path = carlogs/CarCell.swift; sourceTree = SOURCE_ROOT; };
 		292363CB285DB45600277453 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		292363CD285DB47C00277453 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		292363CF285DD2B900277453 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		292363D1285DD35800277453 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		292363D3285E41AD00277453 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		292363D528618DDF00277453 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		292363D72861910C00277453 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,22 +100,27 @@
 		292363952858686B00277453 /* carlogs */ = {
 			isa = PBXGroup;
 			children = (
-				292363AC285B06E700277453 /* SignUpViewController.swift */,
 				292363AA285B064F00277453 /* WelcomeViewController.swift */,
 				292363C1285DB2FA00277453 /* TabBarViewController.swift */,
 				292363BF285DB2CA00277453 /* LoginViewController.swift */,
+				292363AC285B06E700277453 /* SignUpViewController.swift */,
+				292363C5285DB3E000277453 /* ProfileViewController.swift */,
+				292363D528618DDF00277453 /* AddCarViewController.swift */,
+				292363C7285DB3E800277453 /* BrandsViewController.swift */,
 				292363C3285DB33A00277453 /* AppRouter.swift */,
 				292363962858686B00277453 /* AppDelegate.swift */,
 				292363982858686B00277453 /* SceneDelegate.swift */,
-				292363C5285DB3E000277453 /* ProfileViewController.swift */,
-				292363C7285DB3E800277453 /* FriendsViewController.swift */,
 				292363CF285DD2B900277453 /* LogViewController.swift */,
 				292363D1285DD35800277453 /* ShareViewController.swift */,
+				292363D3285E41AD00277453 /* SummaryViewController.swift */,
+				292363D72861910C00277453 /* ViewController.swift */,
 				292363CD285DB47C00277453 /* User.swift */,
-				2923639C2858686B00277453 /* Main.storyboard */,
 				292363CB285DB45600277453 /* DataProvider.swift */,
 				2923639F2858686D00277453 /* Assets.xcassets */,
+				2923639C2858686B00277453 /* Main.storyboard */,
 				292363A12858686D00277453 /* LaunchScreen.storyboard */,
+				292363D92861930F00277453 /* Main.storyboard */,
+				292363DA2861930F00277453 /* LaunchScreen.storyboard */,
 				292363A42858686D00277453 /* Info.plist */,
 				292363BD285B083900277453 /* Utils.swift */,
 				292363AE285B071A00277453 /* Components */,
@@ -120,7 +131,7 @@
 		292363AE285B071A00277453 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				292363C9285DB44700277453 /* FriendCell.swift */,
+				292363C9285DB44700277453 /* CarCell.swift */,
 				292363B1285B07B900277453 /* BaseUILabel.swift */,
 				292363AF285B079500277453 /* BaseUIImageView.swift */,
 				292363B3285B081300277453 /* BaseUIButton.swift */,
@@ -203,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292363D82861910C00277453 /* ViewController.swift in Sources */,
 				292363C0285DB2CA00277453 /* LoginViewController.swift in Sources */,
-				292363CA285DB44700277453 /* FriendCell.swift in Sources */,
+				292363CA285DB44700277453 /* CarCell.swift in Sources */,
 				292363CC285DB45600277453 /* DataProvider.swift in Sources */,
+				292363D628618DDF00277453 /* AddCarViewController.swift in Sources */,
 				292363D0285DD2B900277453 /* LogViewController.swift in Sources */,
 				292363AB285B064F00277453 /* WelcomeViewController.swift in Sources */,
 				292363B8285B081300277453 /* BaseUIButton.swift in Sources */,
@@ -216,13 +229,14 @@
 				292363992858686B00277453 /* SceneDelegate.swift in Sources */,
 				292363D2285DD35800277453 /* ShareViewController.swift in Sources */,
 				292363BB285B081300277453 /* HStack.swift in Sources */,
-				292363C8285DB3E800277453 /* FriendsViewController.swift in Sources */,
+				292363C8285DB3E800277453 /* BrandsViewController.swift in Sources */,
 				292363AD285B06E700277453 /* SignUpViewController.swift in Sources */,
 				292363B9285B081300277453 /* BaseUIStackView.swift in Sources */,
 				292363BA285B081300277453 /* BaseUITextField.swift in Sources */,
 				292363C4285DB33A00277453 /* AppRouter.swift in Sources */,
 				292363B0285B079500277453 /* BaseUIImageView.swift in Sources */,
 				292363C2285DB2FA00277453 /* TabBarViewController.swift in Sources */,
+				292363D4285E41AD00277453 /* SummaryViewController.swift in Sources */,
 				292363BC285B081300277453 /* VStack.swift in Sources */,
 				292363CE285DB47C00277453 /* User.swift in Sources */,
 			);
@@ -243,6 +257,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				292363A22858686D00277453 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		292363D92861930F00277453 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		292363DA2861930F00277453 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

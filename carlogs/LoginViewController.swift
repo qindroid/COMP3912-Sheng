@@ -135,7 +135,5 @@ class LoginViewController: UIViewController {
 	@objc func loginHandler() {
 		let vc = TabBarViewController()
 		AppRouter.navigate(to: vc)
-//		let profileVC = ProfileViewController()
-//		self.navigationController?.pushViewController(profileVC, animated: true)
 	}
 }

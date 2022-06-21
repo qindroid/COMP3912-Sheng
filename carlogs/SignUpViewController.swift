@@ -95,7 +95,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hexString: "#E5E5E5")
+        view.backgroundColor = UIColor(hexString: "#ffffff")
         
         view.addSubview(contentStack)
         
