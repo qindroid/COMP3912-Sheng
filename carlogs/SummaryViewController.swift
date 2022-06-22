@@ -71,9 +71,10 @@ class SummaryViewController: UIViewController {
     
     lazy var totalExpenseStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(totalExpenselabel)
         stack.addArrangedSubview(totalExpenseDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -98,9 +99,10 @@ class SummaryViewController: UIViewController {
     
     lazy var carValueStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(carValuelabel)
         stack.addArrangedSubview(carValueDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -125,9 +127,10 @@ class SummaryViewController: UIViewController {
     
     lazy var totalLossStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(totalLosslabel)
         stack.addArrangedSubview(totalLossDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -135,7 +138,7 @@ class SummaryViewController: UIViewController {
     
     lazy var secondLine: HStack = {
         let stack = HStack()
-        stack.spacing = 20
+        stack.spacing = 0
         stack.addArrangedSubview(totalExpenseStack)
         stack.addArrangedSubview(carValueStack)
         stack.addArrangedSubview(totalLossStack)
@@ -162,9 +165,10 @@ class SummaryViewController: UIViewController {
     
     lazy var pcStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(pclabel)
         stack.addArrangedSubview(pcDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -189,10 +193,11 @@ class SummaryViewController: UIViewController {
     
     lazy var pcostStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(pcostlabel)
         stack.addArrangedSubview(pcostDatalabel)
         stack.alignment = .leading
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         return stack
     }()
     
@@ -216,9 +221,10 @@ class SummaryViewController: UIViewController {
     
     lazy var odoStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(odolabel)
         stack.addArrangedSubview(odoDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -226,7 +232,7 @@ class SummaryViewController: UIViewController {
     
     lazy var forthLine: HStack = {
         let stack = HStack()
-        stack.spacing = 20
+        stack.spacing = 0
         stack.addArrangedSubview(pcStack)
         stack.addArrangedSubview(pcostStack)
         stack.addArrangedSubview(odoStack)
@@ -253,9 +259,10 @@ class SummaryViewController: UIViewController {
     
     lazy var acStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(aclabel)
         stack.addArrangedSubview(acDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -280,9 +287,10 @@ class SummaryViewController: UIViewController {
     
     lazy var tAvgLossStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(tAvgLosslabel)
         stack.addArrangedSubview(tAvgLossDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -307,9 +315,10 @@ class SummaryViewController: UIViewController {
     
     lazy var costperkmStack: VStack = {
         let stack = VStack()
-        stack.spacing = 20
+        stack.spacing = 10
         stack.addArrangedSubview(costperkmLabel)
         stack.addArrangedSubview(costperkmDatalabel)
+        stack.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.28).isActive = true
         stack.alignment = .leading
         return stack
     }()
@@ -317,7 +326,7 @@ class SummaryViewController: UIViewController {
     
     lazy var fifthLine: HStack = {
         let stack = HStack()
-        stack.spacing = 10
+        stack.spacing = 0
         stack.addArrangedSubview(acStack)
         stack.addArrangedSubview(tAvgLossStack)
         stack.addArrangedSubview(costperkmStack)
@@ -350,8 +359,8 @@ class SummaryViewController: UIViewController {
         stack.addArrangedSubview(forthLine)
         stack.addArrangedSubview(fifthLine)
         stack.addArrangedSubview(barChartStack)
-        stack.spacing = 10
-        stack.alignment = .center
+        stack.spacing = 5
+        stack.alignment = .leading
         return stack
     }()
     
