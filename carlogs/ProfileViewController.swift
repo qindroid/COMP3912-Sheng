@@ -31,15 +31,38 @@ class ProfileViewController: UIViewController {
 		return button
 	}()
 	
+    lazy var firstCard: BasicLogCard = {
+        let card = BasicLogCard()
+        card.updateView(name: "2019 Honda Civic", expense: "test", fuelc: "test", averagec: "test", carname: UIImage(named: "civic"))
+        card.heightAnchor.constraint(equalToConstant: 350).isActive = true
+        card.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.90).isActive = true
+        return card
+    }()
+    lazy var secondCard: BasicLogCard = {
+        let card = BasicLogCard()
+        card.updateView(name: "2022 Tesla Model S", expense: "test", fuelc: "test", averagec: "test", carname: UIImage(named: "tesla"))
+        card.heightAnchor.constraint(equalToConstant: 350).isActive = true
+        card.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.90).isActive = true
+        return card
+    }()
+    
 	lazy var contentStack: VStack = {
 		let stack = VStack()
 		stack.addArrangedSubview(friendsButton)
 		stack.addArrangedSubview(logoutButton)
-		stack.alignment = .center
+        stack.addArrangedSubview(firstCard)
+        stack.addArrangedSubview(secondCard)
+        stack.alignment = .top
 		stack.spacing = 20
 		return stack
 	}()
-	
+    
+    let scrollView: UIScrollView = {
+            let v = UIScrollView()
+            v.translatesAutoresizingMaskIntoConstraints = false
+            v.backgroundColor = UIColor.white
+            return v
+    }()
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(true)
@@ -49,11 +72,17 @@ class ProfileViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = UIColor.white
-		view.addSubview(contentStack)
-		NSLayoutConstraint.activate([
-			contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-			contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-		])
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentStack)
+        scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8.0).isActive = true
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 8.0).isActive = true
+        scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8.0).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8.0).isActive = true
+        view.backgroundColor = UIColor.white
+        contentStack.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 8.0).isActive = true
+        contentStack.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8.0).isActive = true
+        contentStack.rightAnchor.constraint(equalTo: scrollView.rightAnchor, constant: -8.0).isActive = true
+        contentStack.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -8.0).isActive = true
 	}
 	
 	@objc func friendsTapped() {
