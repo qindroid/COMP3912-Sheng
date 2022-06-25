@@ -231,8 +231,8 @@ class LogViewController: UIViewController {
     }
     
     @objc func addTapped() {
-        let friendsVC = FriendsViewController()
-        self.navigationController?.pushViewController(friendsVC, animated: true)
+        let logcatevc = LogCategoryViewController()
+        self.navigationController?.pushViewController(logcatevc, animated: true)
     }
     
     @objc func logoutTapped() {

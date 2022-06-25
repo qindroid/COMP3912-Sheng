@@ -36,6 +36,8 @@
 		292363D628618DDF00277453 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D528618DDF00277453 /* AddCarViewController.swift */; };
 		292363D82861910C00277453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363D72861910C00277453 /* ViewController.swift */; };
 		292363F6286430CF00277453 /* BasicLogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363F5286430CF00277453 /* BasicLogCard.swift */; };
+		292363F82866E56500277453 /* LogCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363F72866E56400277453 /* LogCategoryViewController.swift */; };
+		292364002867064C00277453 /* addCateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292363FF2867064C00277453 /* addCateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +58,7 @@
 		292363B6285B081300277453 /* HStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
 		292363B7285B081300277453 /* VStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
 		292363BD285B083900277453 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../../TravelApp/TravelApp/Utils/Utils.swift; sourceTree = "<group>"; };
-		292363BF285DB2CA00277453 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = carlogs/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		292363BF285DB2CA00277453 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = carlogs/ViewControllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		292363C1285DB2FA00277453 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		292363C3285DB33A00277453 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		292363C5285DB3E000277453 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,8 @@
 		292363D528618DDF00277453 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 		292363D72861910C00277453 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		292363F5286430CF00277453 /* BasicLogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLogCard.swift; sourceTree = "<group>"; };
+		292363F72866E56400277453 /* LogCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCategoryViewController.swift; sourceTree = "<group>"; };
+		292363FF2867064C00277453 /* addCateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,20 +106,10 @@
 		292363952858686B00277453 /* carlogs */ = {
 			isa = PBXGroup;
 			children = (
-				292363AA285B064F00277453 /* WelcomeViewController.swift */,
-				292363C1285DB2FA00277453 /* TabBarViewController.swift */,
-				292363BF285DB2CA00277453 /* LoginViewController.swift */,
-				292363AC285B06E700277453 /* SignUpViewController.swift */,
-				292363C5285DB3E000277453 /* ProfileViewController.swift */,
-				292363D528618DDF00277453 /* AddCarViewController.swift */,
-				292363C7285DB3E800277453 /* BrandsViewController.swift */,
+				292364012867065800277453 /* ViewControllers */,
 				292363C3285DB33A00277453 /* AppRouter.swift */,
 				292363962858686B00277453 /* AppDelegate.swift */,
 				292363982858686B00277453 /* SceneDelegate.swift */,
-				292363CF285DD2B900277453 /* LogViewController.swift */,
-				292363D3285E41AD00277453 /* SummaryViewController.swift */,
-				292363D1285DD35800277453 /* ShareViewController.swift */,
-				292363D72861910C00277453 /* ViewController.swift */,
 				292363CD285DB47C00277453 /* User.swift */,
 				292363CB285DB45600277453 /* DataProvider.swift */,
 				2923639F2858686D00277453 /* Assets.xcassets */,
@@ -144,6 +138,26 @@
 				292363F5286430CF00277453 /* BasicLogCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		292364012867065800277453 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				292363CF285DD2B900277453 /* LogViewController.swift */,
+				292363F72866E56400277453 /* LogCategoryViewController.swift */,
+				292363D3285E41AD00277453 /* SummaryViewController.swift */,
+				292363FF2867064C00277453 /* addCateViewController.swift */,
+				292363D1285DD35800277453 /* ShareViewController.swift */,
+				292363D72861910C00277453 /* ViewController.swift */,
+				292363AA285B064F00277453 /* WelcomeViewController.swift */,
+				292363C1285DB2FA00277453 /* TabBarViewController.swift */,
+				292363BF285DB2CA00277453 /* LoginViewController.swift */,
+				292363AC285B06E700277453 /* SignUpViewController.swift */,
+				292363C5285DB3E000277453 /* ProfileViewController.swift */,
+				292363D528618DDF00277453 /* AddCarViewController.swift */,
+				292363C7285DB3E800277453 /* BrandsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292363F82866E56500277453 /* LogCategoryViewController.swift in Sources */,
 				292363D82861910C00277453 /* ViewController.swift in Sources */,
 				292363C0285DB2CA00277453 /* LoginViewController.swift in Sources */,
 				292363CA285DB44700277453 /* CarCell.swift in Sources */,
@@ -227,6 +242,7 @@
 				292363B8285B081300277453 /* BaseUIButton.swift in Sources */,
 				292363B2285B07B900277453 /* BaseUILabel.swift in Sources */,
 				292363972858686B00277453 /* AppDelegate.swift in Sources */,
+				292364002867064C00277453 /* addCateViewController.swift in Sources */,
 				292363BE285B083900277453 /* Utils.swift in Sources */,
 				292363C6285DB3E000277453 /* ProfileViewController.swift in Sources */,
 				292363992858686B00277453 /* SceneDelegate.swift in Sources */,
