@@ -145,17 +145,17 @@
 			children = (
 				292363CF285DD2B900277453 /* LogViewController.swift */,
 				292363F72866E56400277453 /* LogCategoryViewController.swift */,
-				292363D3285E41AD00277453 /* SummaryViewController.swift */,
+				292363BF285DB2CA00277453 /* LoginViewController.swift */,
+				292363AC285B06E700277453 /* SignUpViewController.swift */,
+				292363C5285DB3E000277453 /* ProfileViewController.swift */,
+				292363D528618DDF00277453 /* AddCarViewController.swift */,
 				292363FF2867064C00277453 /* addCateViewController.swift */,
 				292363D1285DD35800277453 /* ShareViewController.swift */,
 				292363D72861910C00277453 /* ViewController.swift */,
 				292363AA285B064F00277453 /* WelcomeViewController.swift */,
 				292363C1285DB2FA00277453 /* TabBarViewController.swift */,
-				292363BF285DB2CA00277453 /* LoginViewController.swift */,
-				292363AC285B06E700277453 /* SignUpViewController.swift */,
-				292363C5285DB3E000277453 /* ProfileViewController.swift */,
-				292363D528618DDF00277453 /* AddCarViewController.swift */,
 				292363C7285DB3E800277453 /* BrandsViewController.swift */,
+				292363D3285E41AD00277453 /* SummaryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
